@@ -1,0 +1,16 @@
+{
+  "id": "3360568",
+  "name": "uni-demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "784528",
+      "name": "日历",
+      "font_class": "icon",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}
