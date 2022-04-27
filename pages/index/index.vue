@@ -1,16 +1,14 @@
 <template>
     <view>
-        <u-grid @click="click">
+        <u-grid >
             <u-grid-item v-for="(baseListItem,baseListIndex) in baseList"
-                    :key="baseListIndex">
-                <u-icon
-                        :customStyle="{paddingTop:20+'rpx'}"
-                        :name="baseListItem.name"
-                        :size="22"></u-icon>
+                    :key="baseListIndex"
+					@click="clickIcon(baseListIndex)">
+				<i class="iconfont" :class="baseListItem.name"></i>		
                 <text class="grid-text">{{baseListItem.title}}</text>
             </u-grid-item>
         </u-grid>
-		<i class="iconfont">&#xe65f;</i>
+		
         <u-toast ref="uToast" />
     </view>
 </template>
@@ -20,23 +18,28 @@
         data() {
             return {
                 baseList: [{
-                    name: 'photo',
-                    title: '图片'
+                    name: 'icon-icon',
+                    title: '纪念日'
                     },
                     {
-                        name: 'lock',
+                        name: 'icon-icon',
                         title: '锁头'
                     },
                     {
-                        name: 'star',
+                        name: 'icon-icon',
                         title: '星星'
                     },
                 ]
             }
         },
         methods: {
-            click(name) {
-                this.$refs.uToast.success(`点击了第${name}个`)
+            clickIcon(baseListIndex){
+             //   this.$refs.uToast.success(`点击了${baseListIndex}`)
+			 if(baseListIndex == 0)
+				uni.navigateTo({
+					url:'../memorialDay/index'
+				})
+				
             }
         }
     }
@@ -51,4 +54,7 @@
         box-sizing: border-box;
         /* #endif */
     }
+	.iconfont{
+		margin-top: 30rpx;
+	}
 </style>
