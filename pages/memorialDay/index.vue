@@ -16,7 +16,7 @@
 							<view class="list_line"></view>
 							<view class="list_title">
 							 <h4>春节</h4>
-							 <text>3月28日</text>
+							 <text>3月28</text>
 							</view>
 							<view class="list_day">
 								<text>还有<text class="day">144</text>天 </text>
