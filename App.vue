@@ -14,4 +14,7 @@
 
 <style>
 @import url("~@/static/iconfont/iconfont.css");
+text{
+	color: #A7A8AA;
+}
 </style>

@@ -17,6 +17,12 @@
 			"style": {
 				"navigationBarTitleText": "纪念日"
 			}
+		},
+		{
+			"path": "pages/memorialDay/memorialList/index",
+			"style": {
+				"navigationBarTitleText": "纪念日"
+			}
 		}
 	],
 	"globalStyle": {
